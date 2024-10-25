@@ -1,0 +1,108 @@
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 15px; /* Устанавливаем отступы между пунктами меню (слева и справа) */
+    /*padding: 0 20px; !* При необходимости можно добавить внутренние отступы *!*/
+}
+
+@media (min-width: 1020px) {
+    .menu li {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 770px) {
+    .menu li {
+        margin: 0 15px;
+    }
+    .side-menu, .hamb {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .menu {
+        display: none;
+    }
+    .side-menu:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 160px 0 15px 0;
+        background-color: white;
+    }
+    .side-menu:checked ~ .menu li {
+        margin-top: 6px;
+    }
+    /* Menu Icon */
+    .hamb{
+        cursor: pointer;
+        float: right;
+        padding: 40px 20px;
+    }/* Style label tag */
+
+    .hamb-line {
+        background: black;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    } /* Style span tag */
+
+    .hamb-line::before,
+    .hamb-line::after{
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .hamb-line::before{
+        top: 7px;
+    }
+    .hamb-line::after{
+        top: -7px;
+    }
+
+    .side-menu {
+        display: none;
+    } /* Hide checkbox */
+
+    /* Toggle menu icon */
+    .side-menu:checked ~ nav{
+        max-height: 100%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+    }
+}
+
+
+
+.menu_link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-out;
+}
+
+.menu_link:hover {
+    color: red;
+}
+
+.menu_link_active {
+    color: red;
+}

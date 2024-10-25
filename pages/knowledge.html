@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>База знаний</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/header.css">
+
+    <link rel="stylesheet" href="../styles/knowledge.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="../main.html">
+            <h1>Alva</h1>
+        </a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <ul class="menu">
+            <li><a class="menu_link" href="../main.html">Главная</a></li>
+            <li><a class="menu_link" href="catalog.html">Каталог</a></li>
+            <li><a class="menu_link menu_link_active" href="#">База знаний</a></li>
+            <!--            <li><a class="menu_link" href="#">Обучение</a></li>-->
+            <li><a class="menu_link" href="contacts.html">Контакты</a></li>
+            <li><a class="menu_link" href="about.html">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <section class="list">
+        <h1>Упражнения</h1>
+        <h3>Массаж для снятия напряжения</h3>
+        <a class="link" href="articles/neck.html">
+            <p>Массаж шеи</p>
+        </a>
+        <a class="link" href="articles/shoulders.html">
+            <p>Массаж плеч</p>
+        </a>
+        <h3>Массаж для расслабления и улучшения циркуляции</h3>
+        <a class="link" href="articles/hands.html">
+            <p>Массаж рук</p>
+        </a>
+        <a class="link" href="articles/legs.html">
+            <p>Массаж лица</p>
+        </a>
+        <h3>Специальные</h3>
+        <a class="link" href="articles/toffel.html">
+            <p>Курс Тоффеля</p>
+        </a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Техники самомассажа "Alva". Все права защищены. Лицензия MIT</p>
+</footer>
+
+<script>
+    // Меню фиксированным при прокрутке
+    window.addEventListener('scroll', function () {
+        const menu = document.querySelector('header');
+        if (window.scrollY > 0) {
+            menu.classList.add('scrolled');
+        } else {
+            menu.classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+</html>

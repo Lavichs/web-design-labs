@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+
+<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="#">
+            <h1>Alva</h1>
+        </a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <ul class="menu">
+            <li><a class="menu_link menu_link_active" href="#">Главная</a></li>
+            <li><a class="menu_link" href="pages/catalog.html">Каталог</a></li>
+            <li><a class="menu_link" href="pages/knowledge.html">База знаний</a></li>
+<!--            <li><a class="menu_link" href="#">Обучение</a></li>-->
+            <li><a class="menu_link" href="pages/contacts.html">Контакты</a></li>
+            <li><a class="menu_link" href="pages/about.html">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+<div>
+    <section class="hero">
+        <h1>Добро пожаловать в мир самомассажа!</h1>
+        <p>Откройте для себя полезные техники самомассажа для улучшения самочувствия и расслабления</p>
+    </section>
+    <section class="techniques">
+        <h2>Популярные статьи за прошлый месяц</h2>
+        <article class="glow-on-hover">
+            <a class="techniques_link" href="pages/articles/toffel.html">
+                <h3>Курс Тоффеля</h3>
+            </a>
+            <p>Тоффель создал курс для приведения организма к идеалу. Данный курс позволяет качественно улучшить организм человека: он дает почти полный иммунитет к болезням, более прочные кости, сила и реакция выше, чем у обычных людей. Ну и по мелочи много разного. В данной статье будут рассмотрены история, особенности и общие оценки стоимости.</p>
+        </article>
+        <article>
+            <a class="techniques_link" href="#">
+                <h3>Массаж рук</h3>
+            </a>
+            <p>Руки — это наши помощники в повседневной жизни, и они тоже нуждаются в заботе. Часто мы забываем о них, пока не почувствуем усталость или дискомфорт. Массаж рук помогает не только расслабить мышцы, но и улучшить кровообращение, повысить гибкость суставов и снять стресс. В этой статье мы погрузимся в мир техник массажа рук и узнаем, как пробуждать их энергию. </p>
+        </article>
+        <article>
+            <a class="techniques_link" href="#">
+                <h3>Массаж стоп</h3>
+            </a>
+            <p>Стопы — это основа нашего организма, и их здоровье напрямую влияет на наше общее самочувствие. Массаж стоп не только приносит удовольствие, но и активно способствует улучшению работы внутренних органов, снятию усталости и восстановлению энергетического баланса. В этой статье мы исследуем различные методы массажа стоп и их пользy для вашего здоровья и благополучия.</p>
+        </article>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Техники самомассажа "Alva". Все права защищены. Лицензия MIT</p>
+</footer>
+
+<script>
+    // Меню фиксированным при прокрутке
+    window.addEventListener('scroll', function() {
+        const menu = document.querySelector('header');
+        if (window.scrollY > 0) {
+            menu.classList.add('scrolled');
+        } else {
+            menu.classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+</html>

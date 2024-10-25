@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Техники самомассажа</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <ul class="menu">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Техники</a></li>
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Добро пожаловать в мир самомассажа!</h1>
+    <p>Откройте для себя полезные техники самомассажа для улучшения самочувствия и расслабления.</p>
+  </section>
+
+  <section class="techniques">
+    <h2>Популярные техники</h2>
+    <article>
+      <h3>Техника 1: Массаж шеи</h3>
+      <p>Эта техника помогает снять напряжение в шее и улучшить кровообращение.</p>
+    </article>
+    <article>
+      <h3>Техника 2: Массаж рук</h3>
+      <p>Массаж рук полезен для снижения стресса и расслабления мышц.</p>
+    </article>
+    <article>
+      <h3>Техника 3: Массаж стоп</h3>
+      <p>Техника, которая помогает расслабиться и улучшить общее самочувствие.</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Техники самомассажа. Все права защищены.</p>
+</footer>
+
+<script>
+  // Меню фиксированным при прокрутке
+  window.addEventListener('scroll', function() {
+    const menu = document.querySelector('header');
+    if (window.scrollY > 0) {
+      menu.classList.add('scrolled');
+    } else {
+      menu.classList.remove('scrolled');
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Цвет фона меню */
+}
+
+.menu {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+    display: flex; /* По умолчанию отображаем все пункты меню */
+}
+
+.menu li {
+    margin: 0 15px; /* Отступы между пунктами меню */
+}
+
+.menu a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста */
+}
+
+/* Стили для гамбургера */
+.hamburger {
+    display: none; /* Скрываем гамбургер по умолчанию */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px; /* Высота полоски */
+    width: 25px; /* Ширина полоски */
+    background-color: #333; /* Цвет полоски */
+    margin: 4px; /* Отступы между полосками */
+}
+
+/* Медиа запрос для маленьких экранов */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Скрываем меню по умолчанию */
+        flex-direction: column; /* Меню будет вертикальным */
+        position: absolute; /* Чтобы можно было позиционировать его */
+        top: 60px; /* Снизу от гамбургера */
+        left: 0; /* Слева */
+        right: 0; /* Справа */
+        background-color: white; /* Фон меню */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для меню */
+    }
+
+    .menu.show {
+        display: flex; /* Показываем меню, если активировано */
+    }
+
+    .hamburger {
+        display: flex; /* Показываем гамбургер на маленьких экранах */
+    }
+}

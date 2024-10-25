@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/header.css">
+
+    <link rel="stylesheet" href="../styles/catalog.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="../main.html">
+            <h1>Alva</h1>
+        </a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <ul class="menu">
+            <li><a class="menu_link" href="../main.html">Главная</a></li>
+            <li><a class="menu_link menu_link_active" href="#">Каталог</a></li>
+            <li><a class="menu_link" href="knowledge.html">База знаний</a></li>
+<!--            <li><a class="menu_link" href="#">Обучение</a></li>-->
+            <li><a class="menu_link" href="contacts.html">Контакты</a></li>
+            <li><a class="menu_link" href="about.html">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+<div>
+    <div class="separate"></div>
+    <div class="catalog">
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/6036882203.jpg" alt="">
+                <h2>259 ₽</h2>
+                <h3>Массажер "Мурашка" для головы</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/pistole.jpg" alt="">
+                <h2>10 999 ₽</h2>
+                <h3>Массажный пистолет Xiaomi Massage Gun</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/rolik.jpg" alt="">
+                <h2>484 ₽</h2>
+                <h3>Массажер роликовый для лица и тела</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/kover.jpg" alt="">
+                <h2>1 404 ₽</h2>
+                <h3>Массажный коврик</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/vanna.jpg" alt="">
+                <h2>9 960 ₽</h2>
+                <h3>PLANTA Турмалиново-нефритовый тепловой коврик</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/turm-kov.jpg" alt="">
+                <h2>5 540 ₽</h2>
+                <h3>Массажная ванночка для ног</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/grechka.png" alt="">
+                <h2>733 ₽</h2>
+                <h3>Подушка массажная с лузгой гречихи</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/nogi.jpg" alt="">
+                <h2>24 500 ₽</h2>
+                <h3>Массажер для ног Yamaguchi Hybrid</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/muss.jpg" alt="">
+                <h2>500 ₽</h2>
+                <h3>Мусс для рук Тайский Лемонграсс (75 мл.)</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="product">
+                <img src="./../resource/products/lotos.jpg" alt="">
+                <h2>1 070 ₽</h2>
+                <h3>Лосьон для тела Лотос</h3>
+            </div>
+            <div class="button_block">
+                <a class="buy" href="#">Купить</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Техники самомассажа "Alva". Все права защищены. Лицензия MIT</p>
+</footer>
+<script>
+    window.addEventListener('scroll', function() {
+        const menu = document.querySelector('header');
+        if (window.scrollY > 0) {
+            menu.classList.add('scrolled');
+        } else {
+            menu.classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+</html>

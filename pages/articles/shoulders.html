@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Массаж плеч</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../../styles/app.css">
+    <link rel="stylesheet" href="../../styles/menu.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+
+    <link rel="stylesheet" href="../../styles/article.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="../../main.html">
+            <h1>Alva</h1>
+        </a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <ul class="menu">
+            <li><a class="menu_link" href="../../main.html">Главная</a></li>
+            <li><a class="menu_link" href="../catalog.html">Каталог</a></li>
+            <li><a class="menu_link menu_link_active" href="../knowledge.html">База знаний</a></li>
+            <li><a class="menu_link" href="../contacts.html">Контакты</a></li>
+            <li><a class="menu_link" href="../about.html">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
+    <div class="art">
+        <h2>Упражнение: Массаж плеч</h2>
+        <h3>Почему это важно?</h3>
+        <p>Плечи – это ещё одна область, где скапливается напряжение, особенно у людей, которые много работают за компьютером. Этот массаж поможет освободить зажатость.</p>
+        <h3>Как выполнить:</h3>
+        <ol>
+            <li>Сядьте или встаньте удобно.</li>
+            <li>Используя одну руку, надавите на противоположное плечо.</li>
+            <li>Двигайтесь от внешней части плеча к шее, используя круговые и прямолинейные движения.</li>
+            <li>Повторите с другой стороны.</li>
+        </ol>
+        <h3>Польза:</h3>
+        <p>Массаж плеч помогает улучшить осанку, уменьшить нагрузку на верхнюю часть тела и обеспечивает общее расслабление.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Техники самомассажа "Alva". Все права защищены. Лицензия MIT</p>
+</footer>
+
+<script>
+    // Меню фиксированным при прокрутке
+    window.addEventListener('scroll', function() {
+        const menu = document.querySelector('header');
+        if (window.scrollY > 0) {
+            menu.classList.add('scrolled');
+        } else {
+            menu.classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+</html>
